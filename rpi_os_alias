@@ -1,0 +1,17 @@
+alias ..='cd ..'
+alias cd..='cd ..'
+alias myalias='nano ~/.bash_aliases'
+alias showalias='cat ~/.bash_aliases'
+alias myreload='source ~/.bashrc'
+alias ll='ls -la'
+alias grep='grep --color=auto'
+alias hist='history | grep'
+
+alias cansetup='~/software/setup_can/setup_can0_250_x'
+alias cdproj='cd ~/software/EM150-CAN-loggerpi'
+
+alias apt-get='sudo apt-get'
+alias reboot='sudo shutdown -r now'
+alias shutdown='sudo shutdown now'
+
+alias gitpush='git push origin HEAD:main'

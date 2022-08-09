@@ -1,0 +1,4 @@
+
+
+TMUX
+start new with session: tmux new -s 'name'
