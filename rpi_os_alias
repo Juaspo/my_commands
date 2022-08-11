@@ -7,8 +7,11 @@ alias ll='ls -la'
 alias grep='grep --color=auto'
 alias hist='history | grep'
 
-alias cansetup='~/software/setup_can/setup_can0_250_x'
 alias cdproj='cd ~/software/EM150-CAN-loggerpi'
+
+alias cansetup='~/software/setup_can/setup_can0_250_x'
+alias candown='sudo ifconfig can0 down'
+alias py='python3'
 
 alias apt-get='sudo apt-get'
 alias reboot='sudo shutdown -r now'
