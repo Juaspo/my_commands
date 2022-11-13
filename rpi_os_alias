@@ -6,6 +6,8 @@ alias myreload='source ~/.bashrc'
 alias ll='ls -la'
 alias grep='grep --color=auto'
 alias hist='history | grep'
+alias updateprofile='. ~/.profile'
+
 
 alias cdproj='cd ~/software/EM150-CAN-loggerpi'
 
@@ -20,3 +22,11 @@ alias shutdown='sudo shutdown now'
 alias gitpush='git push origin HEAD:main'
 
 alias nano='nano -l'
+
+alias wifioff='sudo rfkill block wifi'
+alias btoff='sudo rfkill block bluetooth'
+alias wifion='sudo rfkill unblock wifi'
+alias bton='sudo rfkill unblock bluetooth'
+
+
+alias rapid_can='sudo tmux attach -t CAN_session'
