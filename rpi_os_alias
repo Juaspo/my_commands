@@ -18,3 +18,5 @@ alias reboot='sudo shutdown -r now'
 alias shutdown='sudo shutdown now'
 
 alias gitpush='git push origin HEAD:main'
+
+alias nano='nano -l'
