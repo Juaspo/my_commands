@@ -1,3 +1,7 @@
+CANSEND
+canplayer can0=can0 -li -g300 -I        = send on can0, run infinite, gap 300ms,  input file
+sudo ifconfig can0 txqueuelen 1000      = increase queue length for packet transmission, and generate a default queueing discipline (qdisc) in can0 socket
+
 put application to background:
     ctrl-z
   background application
@@ -13,4 +17,29 @@ ps aux = see running applications
 sudo kill -9 [PID] = kill application with certain PID number
 
 TMUX
+
+ctrl+b - Trigger command
+
 start new with session: tmux new -s 'name'
+
+TMUX commands
+tmux                                    = create plain vanilla window
+tmux new -s docker                      = creates a new session called docker
+tmax rename-session -t docker git       = renames docker session to git
+tmux ls                                 = list all current sessions
+tmux attach -t git                      = attach to git session
+
+Session Actions
+ctrl+b+%                                = new pane to the side
+ctrl+b+"                                = new pane below
+ctrl+[arrow key]                        = shift focus to that pane
+ctrl+b d                                = detach session
+
+Window actions
+ctrl+b c                                = create new window within session
+ctrl+b 0                                = shift focus to window '0'
+ctrl+b ,                                = rename window
+
+Exit actions
+exit                                    = exit session
+tmux kill-session -t git                = kill git session
