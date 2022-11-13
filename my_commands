@@ -1,4 +1,16 @@
+put application to background:
+    ctrl-z
+  background application
+    bg
+  return application to foreground
+    fg
+  see jobs in queue
+    jobs
+  bring specific job to foreground
+    fg -n [job queue id]
 
+ps aux = see running applications
+sudo kill -9 [PID] = kill application with certain PID number
 
 TMUX
 start new with session: tmux new -s 'name'
